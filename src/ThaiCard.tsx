@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -24,8 +24,10 @@ const useStyles = makeStyles({
 });
 
 const ThaiCard = (props: any) => {
+  const [language, setLanguage] = useState<string>("Thai");
+
   const classes = useStyles();
-  const { image, title, header, content } = props;
+  const { image, title, header, content, engHeader, engContent } = props;
 
   return (
     <Card className={classes.root}>
@@ -33,16 +35,23 @@ const ThaiCard = (props: any) => {
         <CardMedia className={classes.media} image={image} title={title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {header}
+            {language === "English" ? engHeader : header}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {content}
+            {language === "English" ? engContent : content}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          English
+        <Button
+          size="small"
+          color="primary"
+          value={language}
+          onClick={() =>
+            setLanguage(language === "English" ? "Thai" : "English")
+          }
+        >
+          {language === "English" ? "Thai" : "English"}
         </Button>
       </CardActions>
     </Card>

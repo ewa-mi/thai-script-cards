@@ -36,6 +36,7 @@ export default [
       "https://cdn.pixabay.com/photo/2016/10/01/20/54/mouse-1708347_1280.jpg",
     title: "Mouse",
     header: "หนู",
+    engHeader: "Mouse",
     content:
       "ชื่อสัตว์เลี้ยงลูกด้วยน้ำนมหลายสกุลในวงศ์ Muridae มีฟันแทะ อาศัยอยู่ทั่วไปตามบ้านเรือน และในธรรมชาติ มีหลายชนิด",
     engContent:
