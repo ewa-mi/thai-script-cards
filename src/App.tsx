@@ -10,7 +10,9 @@ function App() {
       </Grid>
       <Grid item container>
         <Grid item xs={2} sm={2} />
-        <Grid item xs={12} sm={8}></Grid>
+        <Grid item xs={12} sm={8}>
+          content will be here
+        </Grid>
         <Grid item xs={2} sm={2} />
       </Grid>
     </Grid>
