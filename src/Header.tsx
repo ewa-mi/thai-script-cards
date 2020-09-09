@@ -20,7 +20,7 @@ const Header = () => {
         <Typography className={classes.headerStyle} variant="h4">
           Thai Script
         </Typography>
-        <AcUnitRoundedIcon style={{ fontSize: "30" }} />
+        <AcUnitRoundedIcon style={{ fontSize: "25" }} />
       </Toolbar>
     </AppBar>
   );
