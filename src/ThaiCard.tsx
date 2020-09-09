@@ -12,7 +12,10 @@ const useStyles = makeStyles({
   root: {
     marginTop: 20,
     maxWidth: 400,
-    minHeight: 400,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    height: "100%",
   },
   media: {
     height: 140,
@@ -36,12 +39,8 @@ const ThaiCard = (props: any) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button
-          size="small"
-          color="primary"
-          style={{ justifyItems: "flex-end" }}
-        >
+      <CardActions style={{ justifyItems: "flex-end" }}>
+        <Button size="small" color="primary">
           English
         </Button>
       </CardActions>
