@@ -10,8 +10,8 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 30,
+    marginBottom: 30,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
