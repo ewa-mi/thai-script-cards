@@ -12,7 +12,6 @@ const useStyles = makeStyles({
   root: {
     marginTop: 20,
     marginBottom: 20,
-    maxWidth: 400,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
