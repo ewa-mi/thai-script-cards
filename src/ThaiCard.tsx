@@ -17,24 +17,20 @@ const useStyles = makeStyles({
   },
 });
 
-const ThaiCard = () => {
+const ThaiCard = (props: any) => {
   const classes = useStyles();
+  const { image, title, header, content } = props;
 
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://cdn.pixabay.com/photo/2015/04/20/13/28/lizard-731336_1280.jpg"
-          title="Contemplative Reptile"
-        />
+        <CardMedia className={classes.media} image={image} title={title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            จิ้งจก
+            {header}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            ชื่อสัตว์เลื้อยคลานขนาดเล็กในวงศ์ Gekkonidae
-            ซึ่งเป็นวงศ์เดียวกับตุ๊กแกในประเทศไทยมีอยู่หลายชนิด.
+            {content}
           </Typography>
         </CardContent>
       </CardActionArea>
