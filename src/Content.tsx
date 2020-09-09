@@ -4,9 +4,9 @@ import ThaiCard from "./ThaiCard";
 import cardsData from "./constants";
 
 const Content = () => {
-  const getCardsData = (cardsDataObj: any) => {
+  const getCardsData = (cardsDataObj: any, index: number) => {
     return (
-      <Grid item xs={12} sm={6} md={4}>
+      <Grid key={index} item xs={12} sm={6} md={4}>
         <ThaiCard {...cardsDataObj} />
       </Grid>
     );
@@ -14,7 +14,9 @@ const Content = () => {
 
   return (
     <Grid container spacing={2}>
-      {cardsData.map((cardsDataObj) => getCardsData(cardsDataObj))}
+      {cardsData.map((cardsDataObj, index) =>
+        getCardsData(cardsDataObj, index)
+      )}
     </Grid>
   );
 };

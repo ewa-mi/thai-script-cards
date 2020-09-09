@@ -11,6 +11,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     marginTop: 20,
+    marginBottom: 20,
     maxWidth: 400,
     display: "flex",
     flexDirection: "column",
@@ -18,7 +19,7 @@ const useStyles = makeStyles({
     height: "100%",
   },
   media: {
-    height: 140,
+    height: 150,
   },
 });
 
@@ -39,7 +40,7 @@ const ThaiCard = (props: any) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions style={{ justifyItems: "flex-end" }}>
+      <CardActions>
         <Button size="small" color="primary">
           English
         </Button>
