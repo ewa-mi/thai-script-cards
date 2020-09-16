@@ -13,7 +13,7 @@ const Content = () => {
   };
 
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} style={{ padding: "25px" }}>
       {cardsData.map((cardsDataObj, index) =>
         getCardsData(cardsDataObj, index)
       )}
