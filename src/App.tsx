@@ -25,7 +25,9 @@ const App = () => {
             TypeScript. This is just a sandbox. I use it to practice Material UI
             with TypeScript. This is just a sandbox. I use it to practice
             Material UI with TypeScript. For more info, please visit{" "}
-            <a href="https://github.com/ewa-mi">my Github</a>
+            <a href="https://github.com/ewa-mi" target="blank">
+              my Github
+            </a>
           </Typography>
         </Grid>
       </Grid>
